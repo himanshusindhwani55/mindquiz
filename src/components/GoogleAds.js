@@ -3,7 +3,6 @@ import  PropTypes from 'prop-types';
 
 export default class GoogleAds extends Component {
   static propTypes = {
-    client: PropTypes.string,
     slot: PropTypes.string,
     format: PropTypes.string,
   }
@@ -23,7 +22,7 @@ export default class GoogleAds extends Component {
           style={this.props.style}
           data-ad-client="ca-pub-9863251580869365"
           data-ad-slot={this.props.slot}
-          data-ad-format={this.props.format}>
+          data-full-width-responsive={this.props.responsive}>
         </ins>
       </div>
     );

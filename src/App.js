@@ -144,7 +144,7 @@ class App extends Component {
         <GoogleAds slot="3810717223" style={{display:'inline-block',width:728,height:90}} />
         <StartPage onClick={this.handleStart} startFlag={this.state.startFlag}/>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
-        <GoogleAds slot="3363994662" style={{display:'inline-block',width:728,height:90}} format="auto" />
+        <GoogleAds slot="3363994662"  responsive="true" adformat="auto"/>
       </div>
     );
   }
